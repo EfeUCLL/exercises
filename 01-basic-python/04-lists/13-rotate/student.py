@@ -1,9 +1,7 @@
 # Write your code here
-from copy import copy
 
 def rotate(xs, n):
-    xs2 = copy(xs)
-    return xs[n:] + xs2[:n]
+    return xs[n:] + xs[:n]
 
 print(rotate([1, 2, 3], 2))
 
