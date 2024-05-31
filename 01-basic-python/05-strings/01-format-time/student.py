@@ -1,7 +1,9 @@
 # Write your code here
 
 def format_time(hours, minutes, seconds):
-    return f'{"0" + str(hours) if hours < 10 else "" + str(hours)}:{"0" + str(minutes) if minutes < 10 else "" + str(minutes)}:{"0" + str(seconds) if seconds < 10 else "" + str(seconds)}'
+    return (f'{"0" + str(hours) if hours < 10 else "" + str(hours)}:'
+            f'{"0" + str(minutes) if minutes < 10 else "" + str(minutes)}:'
+            f'{"0" + str(seconds) if seconds < 10 else "" + str(seconds)}')
 
 #oplossing
 # def format_time(hours, minutes, seconds):

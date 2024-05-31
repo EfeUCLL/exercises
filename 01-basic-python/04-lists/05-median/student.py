@@ -1,22 +1,20 @@
 # Write your code here
 
 def median(ns):
-    sortedList = sorted(ns)
-    if len(sortedList) == 1:
-        return sortedList[0]
+    sorted_list = sorted(ns)
+    if len(sorted_list) == 1:
+        return sorted_list[0]
     
-    elif len(sortedList) == 2:
-        return (sortedList[0] + sortedList[1]) / 2 
+    elif len(sorted_list) == 2:
+        return (sorted_list[0] + sorted_list[1]) / 2
     
-    elif len(sortedList) % 2 == 0:
-        indexLeft = (len(sortedList) // 2) - 1
-        indexRight = indexLeft + 1
+    elif len(sorted_list) % 2 == 0:
+        index_left = (len(sorted_list) // 2) - 1
+        index_right = index_left + 1
 
-        median = (sortedList[indexLeft] + sortedList[indexRight]) / 2
-        return median
-    
-    median = sortedList[len(sortedList) // 2]
-    return median
+        return (sorted_list[index_left] + sorted_list[index_right]) / 2
+
+    return sorted_list[len(sorted_list) // 2]
 
 #oplossing
 # def median(ns):
