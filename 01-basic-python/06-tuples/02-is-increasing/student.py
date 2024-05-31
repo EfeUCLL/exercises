@@ -4,9 +4,6 @@ def is_increasing(ns):
     ms = ns[1:]
     paired = list(zip(ns, ms))
 
-    if len(ns) == 0 or len(ns) == 1:
-        return True
-
     for j in range(len(paired)):
         if paired[j][0] > paired[j][1]:
             return False
