@@ -1,8 +1,7 @@
 # Write your code here
 
 def is_increasing(ns):
-    ms = ns[1:]
-    paired = list(zip(ns, ms))
+    paired = list(zip(ns, ns[1:]))
 
     for j in range(len(paired)):
         if paired[j][0] > paired[j][1]:
