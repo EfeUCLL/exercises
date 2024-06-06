@@ -6,11 +6,11 @@ class Student:
     def calculate_letter_grade(self, score):
         if score >= 90:
             return 'A'
-        elif 80 <= score <= 89:
+        elif score >= 80:
             return 'B'
-        elif 70 <= score <= 79:
+        elif score >= 70:
             return 'C'
-        elif 60 <= score <= 69:
+        elif score >= 60:
             return 'D'
         return 'F'
 
