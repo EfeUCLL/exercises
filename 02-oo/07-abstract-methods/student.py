@@ -1,6 +1,7 @@
 # Write your code here
 from abc import ABC, abstractmethod
 
+
 class A(ABC):
     def a(self):
         self.b()
@@ -11,7 +12,7 @@ class A(ABC):
     @abstractmethod
     def b(self):
         ...
-    
+
     @abstractmethod
     def c(self):
         ...
@@ -30,7 +31,7 @@ class C(B):
         pass
 
 
-class D(A, ABC):
+class D(A):
     def b(self):
         self.f()
 
